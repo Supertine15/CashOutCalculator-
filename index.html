@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CashOut Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CashOut Calculator</h1>
+    <div class="subtitle">Bkash and Nagad ক্যাশআউট চার্জ Calculator</div>
+
+    <label for="amount">Enter Amount (BDT):</label>
+    <input type="number" id="amount" placeholder="Enter amount in BDT">
+
+    <label for="service">Select Service:</label>
+    <select id="service">
+      <option value="nagad_app">Nagad App</option>
+      <option value="nagad_ussd">Nagad USSD (*167#)</option>
+      <option value="bkash_app">Bkash App</option>
+      <option value="bkash_ussd">Bkash USSD (*247#)</option>
+    </select>
+
+    <button onclick="calculateCharge()">Calculate</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <footer>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#disclaimer">Disclaimer</a>
+  </footer>
+
+  <section id="about" class="section">
+    <h2>আমাদের সম্পর্কে</h2>
+    <p>এই ওয়েবসাইটটি বাংলাদেশের নাগদ এবং বিকাশ সেবার মাধ্যমে ক্যাশআউট চার্জ ক্যালকুলেট করার সুবিধা প্রদান করে। এটি আপনাকে দ্রুত এবং নির্ভুলভাবে হিসাব করার সুযোগ দেয়।</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>যোগাযোগ</h2>
+    <p>কোনো প্রশ্ন থাকলে ইমেইল করুন: <a href="mailto:support@cashoutcalculator.com">support@cashoutcalculator.com</a></p>
+  </section>
+
+  <section id="disclaimer" class="section">
+    <h2>দায়বদ্ধতা</h2>
+    <p>এই ওয়েবসাইটে প্রদত্ত ক্যাশআউট চার্জের হিসাব শুধুমাত্র আনুমানিক। ক্যাশআউট করার আগে সেবা প্রদানকারীর সাথে যাচাই করুন।</p>
+  </section>
+
+  <div class="copyright">
+    Copyright &copy; <a href="#">cyberthunder 360</a> 2024. All Rights Reserved.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
